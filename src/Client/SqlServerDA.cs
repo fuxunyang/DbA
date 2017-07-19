@@ -30,6 +30,7 @@ namespace DbA.Client
         }
         #endregion
 
+        #region IDbAccessor
         /// <summary>
         /// 执行数据库命令并返回受影响行数
         /// </summary>
@@ -111,6 +112,7 @@ namespace DbA.Client
                 throw new Exception(String.Format("ExecuteDataTable时发生异常；CommandText = {0},异常信息：{1}", strCommand, ex.Message));
             }
         }
+        #endregion
 
         /// <summary>
         /// 添加执行命令所需要的参数
